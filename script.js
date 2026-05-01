@@ -7,16 +7,7 @@
     document.getElementById('safe').addEventListener('click', () => {
       document.getElementById('status').innerHTML = '✅ Safe!';
     });
-  </script>
-</body>
-</html>
-The "before each" hook (beforeEach) in Cypress runs setup code before every test, like visiting the page or resetting state.
-
-Cypress Test Code (cypress/e2e/bomb.cy.js)
-javascript
-/// <reference types="cypress" />
-
-describe('Bomb Game', () => {
+      describe('Bomb Game', () => {
   beforeEach(() => {
     // Visit the page before each test
     cy.visit('index.html');  // Assuming local file
